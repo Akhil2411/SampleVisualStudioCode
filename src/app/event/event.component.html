@@ -1,0 +1,43 @@
+<p>event works!</p>
+
+<button type="button" [disabled]="dis" class="btn btn-primary" style="width: 300px;height: 300px;">Echhuse me</button>
+<button type="button" (click)="sooryan($event)" class="btn btn-danger"  style="width: 300px;height: 300px;">No Echuse Me</button>
+<p>{{ss}}</p>
+
+
+<input type="text" [(ngModel)]='mathanga'>
+{{mathanga}}
+
+
+<p *ngIf='getValues()'>Heloo I am African</p>
+
+<div *ngFor="let x of item;let i=index" class="container">
+    
+    <p>index={{i+1}}  value={{x}}</p>
+    
+   
+</div>
+
+
+<p *ngIf="server;else mwonuse">Helo this is server</p>
+
+
+<ng-template #mwonuse>
+   <p>loading</p> 
+   <p>lading wwwww</p>
+</ng-template>
+
+
+<p [ngStyle]="{ backgroundColor:getColor()}">this is test</p>
+<p [ngClass] ="{ para:getVal() }" >This is a Paragraph</p>
+
+<p id="paragraph">This is a Paragraph</p>
+
+
+<p>{{student.id}}</p>
+<p>{{student.name}}</p>
+<p>{{student.address}}</p>
+<p>{{student.phone}}</p>
+
+
+
